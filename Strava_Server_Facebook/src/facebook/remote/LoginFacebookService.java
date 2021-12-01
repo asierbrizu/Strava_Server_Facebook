@@ -17,8 +17,8 @@ public class LoginFacebookService extends Thread {
 	private static String DELIMITER = "#";
 	
 	public LoginFacebookService(Socket socket) {
-		cuentas.put("herrero", "pantalon");
-		cuentas.put("brizuela", "camisa");
+		cuentas.put("herrero@opendeusto.es", "pantalon");
+		cuentas.put("brizuela@opendeusto.es", "camisa");
 		try {
 			this.tcpSocket = socket;
 		    this.in = new DataInputStream(socket.getInputStream());
